@@ -223,7 +223,6 @@ print(school)
 while True:
     command = input(":").
         if command == "grade":
-
         class_name = input("Класс: ")
         student_name = input("ФИО ученика: ")
         subject_name = input("Предмет: ")
