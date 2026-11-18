@@ -239,3 +239,7 @@ while True:
     elif command == "people":
         for person in school.people():
             print(" ", person)
+
+    elif command == "exit":
+        print("До свидания!")
+        break
