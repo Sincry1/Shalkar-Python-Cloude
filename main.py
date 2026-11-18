@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Subject:
     def __init__(self, name):
-        self._name = name.strip().capitalize()
+        self._name = name
 
     @property
     def name(self):
