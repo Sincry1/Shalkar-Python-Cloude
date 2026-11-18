@@ -198,7 +198,7 @@ class School:
         return people
 
 
-school = ("школа №1")
+school = School("школа №1")
 school.add_subject("Математика")
 school.add_subject("Физика")
 school.add_subject("История")
