@@ -114,12 +114,6 @@ class SchoolClass:
             return 0
         return total / count
 
-    def report(self):
-        print(f"Отчёт по классу {self._name}")
-        print(f"Учеников: {len(self._students)}, средний балл класса: {round(self.average, 2)}")
-        for student in self._students:
-            print(student)
-
     def __str__(self):
         return f"Класс {self._name}, учеников: {len(self._students)}"
 
