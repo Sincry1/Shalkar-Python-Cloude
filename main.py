@@ -227,22 +227,7 @@ school.put_grade("9А", "Смирнова Ольга", "Физика", 5)
 print(school)
 while True:
     command = input("\n> ").strip().lower()
-    if command == "info":
-        school.overview()
-    elif command == "add_class":
-        class_name = input("Название класса (например, 9А): ")
-        print("Создан:", school.add_class(class_name))
-    elif command == "add_student":
-        class_name = input("Класс: ")
-        student_name = input("ФИО ученика: ")
-        print("Добавлен:", school.add_student(class_name, student_name))
-    elif command == "add_subject":
-        print("Добавлен:", school.add_subject(input("Название предмета: ")))
-    elif command == "add_teacher":
-        teacher_name = input("ФИО учителя: ")
-        subject_name = input("Предмет: ")
-        print("Добавлен:", school.add_teacher(teacher_name, subject_name))
-    elif command == "grade":
+        if command == "grade":
         class_name = input("Класс: ")
         student_name = input("ФИО ученика: ")
         subject_name = input("Предмет: ")
