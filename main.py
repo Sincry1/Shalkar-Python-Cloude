@@ -15,7 +15,7 @@ class Subject:
 
 class Person(ABC):
     def __init__(self, name):
-        self._name = name.strip().title()
+        self._name = name
 
     @property
     def name(self):
