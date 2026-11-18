@@ -115,7 +115,7 @@ class SchoolClass:
         return total / count
 
     def report(self):
-        print(f"=== Отчёт по классу {self._name} ===")
+        print(f"Отчёт по классу {self._name}")
         print(f"Учеников: {len(self._students)}, средний балл класса: {round(self.average, 2)}")
         for student in self._students:
             print(student)
@@ -183,7 +183,7 @@ class School:
         for school_class in self._classes:
             if class_name == "" or school_class.name == class_name.strip().upper():
                 for student in school_class.students:
-                    if len(student.grades) > 0 and student.average >= self.HONOR_THRESHOLD:
+                    if len(student.grades) > 0 and student.average >= self.honor_tgreshhold:
                         result.append(student)
         return result
 
@@ -204,7 +204,7 @@ class School:
         return people
 
 
-school = School("Гимназия №1")
+school = ("школа №1")
 school.add_subject("Математика")
 school.add_subject("Физика")
 school.add_subject("История")
