@@ -99,7 +99,7 @@ class SchoolClass:
 
     def find_student(self, name):
         for student in self._students:
-            if student.name.lower() == name.strip().lower():
+            if student.name == name:
                 return student
 
     @property
