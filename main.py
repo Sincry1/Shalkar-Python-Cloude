@@ -239,6 +239,16 @@ while True:
     elif command == "people":
         for person in school.people():
             print(" ", person)
+    elif command == "help":
+        print("Команды:")
+        print("  grade   - поставить оценку")
+        print("  avg     - средний балл ученика")
+        print("  report  - отчёт по классу")
+        print("  honors  - список отличников")
+        print("  people  - все учителя и ученики")
+        print("  help    - список команд")
+        print("  exit    - выход")
+
     elif command == "exit":
         print("До свидания!")
         break
