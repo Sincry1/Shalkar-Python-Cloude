@@ -236,12 +236,7 @@ while True:
     elif command == "avg":
         school_class = school.get_class(input("Класс: "))
         student = school_class.find_student(input("ФИО ученика: "))
-        print(f"Средний балл {student.name}: {round(student.average, 2)}")
-    elif command == "history":
-        school_class = school.get_class(input("Класс: "))
-        student = school_class.find_student(input("ФИО ученика: "))
-        for grade in student.grades:
-            print(" ", grade)
+        print(f"Средний балл {student.name}: {round(student.average, 2)}") 
     elif command == "report":
         school.get_class(input("Класс: ")).report()
     elif command == "honors":
