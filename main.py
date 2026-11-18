@@ -221,7 +221,7 @@ school.put_grade("9А", "Смирнова Ольга", "Физика", 5)
 print(school)
 
 while True:
-    command = input("").
+    command = input(":").
         if command == "grade":
 
         class_name = input("Класс: ")
